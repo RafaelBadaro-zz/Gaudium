@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <Sueca></Sueca>
+    <Main></Main>
   </div>
 </template>
 
 <script>
-import Sueca from "./components/Sueca.vue";
+import Main from "./components/Main.vue";
 
 export default {
   name: "App",
   components: {
-    Sueca,
+    Main,
   },
 };
 </script>

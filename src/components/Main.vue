@@ -1,18 +1,16 @@
 <template>
   <div class="main">
-    <div class="deck">
-      <Deck></Deck>
-    </div>
+
   </div>
 </template>
 
 <script>
-import Deck from "./Deck.vue";
+
 
 export default {
-  name: "Sueca",
+  name: "Main",
   components: {
-    Deck,
+
   },
 };
 </script>
