@@ -2,15 +2,17 @@
   <div class="main">
     <div class="header">
       <div class="welcome_text">Bem vindo ao Gaudium, Alegriano</div>
-      <div class="profile_icon"> <i class="material-icons">person</i></div>
+      <div class="profile_icon"><i class="material-icons">person</i></div>
     </div>
     <div class="body">
       <div class="cards">
         <div class="card">
-          <div class="content">
-            <h1 class="title">Pagamentos</h1>
-            <div class="icon"><i class="material-icons">attach_money</i></div>
-          </div>
+          <router-link class="link" to="/pagamentos">
+            <div class="content">
+              <h1 class="title">Pagamentos</h1>
+              <div class="icon"><i class="material-icons">attach_money</i></div>
+            </div>
+          </router-link>
         </div>
         <div class="card">
           <div class="content">
@@ -128,6 +130,9 @@ export default {
   background-color: #fbe192;
   border-radius: 70px;
   margin: 10px;
+}
+.link {
+  color: inherit;
 }
 .content {
 }
