@@ -6,101 +6,31 @@
     </div>
     <div class="body">
       <div class="cards">
-        <div class="card">
-          <router-link class="link" to="/pagamentos">
-            <div class="content">
-              <h1 class="title">Pagamentos</h1>
-              <div class="icon"><i class="material-icons">attach_money</i></div>
-            </div>
-          </router-link>
-        </div>
-        <div class="card">
-          <div class="content">
-            <h1 class="title">Comunicação</h1>
-            <div class="icon">
-              <i class="material-icons">group</i>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <h1 class="title">Serviços</h1>
-            <div class="icon">
-              <i class="material-icons">connect_without_contact</i>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <h1 class="title">Marketplace</h1>
-            <div class="icon"><i class="material-icons">local_shipping</i></div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <h1 class="title">Comida</h1>
-            <div class="icon"><i class="material-icons">local_dining</i></div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <h1 class="title">Shopping</h1>
-            <div class="icon"><i class="material-icons">shopping_bag</i></div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <h1 class="title">Notícias</h1>
-            <div class="icon"><i class="material-icons">library_books</i></div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <h1 class="title">Transporte</h1>
-            <div class="icon"><i class="material-icons">directions_car</i></div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <h1 class="title">Tempo</h1>
-            <div class="icon"><i class="material-icons">cloud_queue</i></div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <h1 class="title">Destaques</h1>
-            <div class="icon"><i class="material-icons">new_releases</i></div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <h1 class="title">Entretenimento</h1>
-            <div class="icon"><i class="material-icons">theaters</i></div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <h1 class="title">Feedback</h1>
-            <div class="icon"><i class="material-icons">announcement</i></div>
-          </div>
-        </div>
-        <!--   
-          <div class="card">
-          <div class="content">
-            <h1 class="title">Titulo</h1>
-            <div class="icon"><i class="material-icons"></i></div>
-          </div>
-        </div>
-         -->
+        <router-link class="link" to="/pagamentos">
+          <Card titulo="Pagamentos" icone="attach_money"></Card>
+        </router-link>
+        <Card titulo="Comunicação" icone="group"></Card>
+        <Card titulo="Serviços" icone="connect_without_contact"></Card>
+        <Card titulo="Marketplace" icone="local_shipping"></Card>
+        <Card titulo="Comida" icone="local_dining"></Card>
+        <Card titulo="Shopping" icone="shopping_bag"></Card>
+        <Card titulo="Notícias" icone="library_books"></Card>
+        <Card titulo="Transporte" icone="directions_car"></Card>
+        <Card titulo="Tempo" icone="cloud_queue"></Card>
+        <Card titulo="Destaques" icone="new_releases"></Card>
+        <Card titulo="Entretenimento" icone="theaters"></Card>
+        <Card titulo="Feedback" icone="announcement"></Card>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import Card from "./Card.vue";
+
 export default {
   name: "Main",
-  components: {},
+  components: { Card },
 };
 </script>
 
@@ -121,26 +51,7 @@ export default {
   align-items: center;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-
-.card {
-  background-color: #fbe192;
-  border-radius: 70px;
-  margin: 10px;
-}
 .link {
   color: inherit;
-}
-.content {
-}
-.title {
-  font-size: 20px;
-  padding-top: 15px;
-  margin: 0;
-}
-.icon {
 }
 </style>

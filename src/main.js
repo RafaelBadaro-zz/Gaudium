@@ -11,6 +11,7 @@ const routes = [
   { path: '/pagamentos', component: Pagamentos },
   { path: '*', component: Main },
   { path: '/', component: Main },
+  { path: '/home', component: Main },
 ]
 
 const router = new VueRouter({
