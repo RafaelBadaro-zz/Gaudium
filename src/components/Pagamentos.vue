@@ -1,6 +1,6 @@
 <template>
   <div class="pagamentos">
-    <div class="header">
+    <div class="header-pagamentos">
       <router-link class="link" to="/home">
         <div class="back">
           <i class="material-icons">keyboard_backspace</i>
@@ -11,13 +11,26 @@
     </div>
     <div class="body">
       <div class="cards">
-        <Card titulo="Carteira Virtual" icone="account_balance_wallet"></Card>
-        <Card titulo="Extrato" icone="toc"></Card>
-        <Card titulo="Contas a pagar" icone="request_page"></Card>
-        <Card titulo="Empréstimos" icone="monetization_on"></Card>
-        <Card titulo="Agendamentos" icone="insert_invitation"></Card>
-        <Card titulo="Recebimentos" icone="savings"></Card>
+        <router-link class="link" to="/construcao">
+          <Card titulo="Carteira Virtual" icone="account_balance_wallet"></Card>
+        </router-link>
+        <router-link class="link" to="/construcao">
+          <Card titulo="Extrato" icone="toc"></Card>
+        </router-link>
+        <router-link class="link" to="/construcao">
+          <Card titulo="Contas a pagar" icone="request_page"></Card>
+        </router-link>
+        <router-link class="link" to="/construcao">
+          <Card titulo="Empréstimos" icone="monetization_on"></Card>
+        </router-link>
+        <router-link class="link" to="/construcao">
+          <Card titulo="Agendamentos" icone="insert_invitation"></Card>
+        </router-link>
+        <router-link class="link" to="/construcao">
+          <Card titulo="Recebimentos" icone="savings"></Card>
+        </router-link>
       </div>
+      <div class="saldo">Saldo R$: 0,00</div>
     </div>
   </div>
 </template>
@@ -38,14 +51,14 @@ export default {
   grid-template-rows: 6% 94%;
 }
 
-.header {
+.header-pagamentos {
   background-color: #fbe192;
   border-top: 2px solid #f7c325;
   border-bottom: 2px solid #f7c325;
   text-align: left;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  padding-top: 5px;
 }
 
 .cards {
@@ -55,6 +68,13 @@ export default {
 
 .link {
   color: inherit;
+}
+
+.saldo {
+  background-color: #fbe192;
+  border-top: 2px solid #f7c325;
+  border-bottom: 2px solid #f7c325;
+  text-align: left;
 }
 </style>
 
