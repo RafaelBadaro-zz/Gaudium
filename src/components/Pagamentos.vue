@@ -1,14 +1,6 @@
 <template>
   <div class="pagamentos">
-    <div class="header-pagamentos">
-      <router-link class="link" to="/home">
-        <div class="back">
-          <i class="material-icons">keyboard_backspace</i>
-        </div></router-link
-      >
-      <div class="welcome_text">Pagamentos</div>
-      <div class="profile_icon"><i class="material-icons">person</i></div>
-    </div>
+    <HeaderRetorno nome="Pagamentos"></HeaderRetorno>
     <div class="body">
       <div class="cards">
         <router-link class="link" to="/construcao">
@@ -37,37 +29,19 @@
 
 <script>
 import Card from "./Card.vue";
+import HeaderRetorno from "./HeaderRetorno.vue";
 
 export default {
   name: "Pagamentos",
-  components: { Card },
+  components: { Card, HeaderRetorno },
 };
 </script>
 
 <style>
-.main {
-  height: 100%;
-  display: grid;
-  grid-template-rows: 6% 94%;
-}
-
-.header-pagamentos {
-  background-color: #fbe192;
-  border-top: 2px solid #f7c325;
-  border-bottom: 2px solid #f7c325;
-  text-align: left;
-  display: flex;
-  justify-content: space-around;
-  padding-top: 5px;
-}
 
 .cards {
   display: grid;
   grid-template-columns: 50% 50%;
-}
-
-.link {
-  color: inherit;
 }
 
 .saldo {

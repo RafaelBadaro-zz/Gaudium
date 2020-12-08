@@ -5,13 +5,9 @@
 </template>
 
 <script>
-
-
 export default {
   name: "App",
-  components: {
-    
-  },
+  components: {},
 };
 </script>
 
@@ -23,7 +19,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   height: 100%;
-  background-color: #DFE6ED;
+  background-color: #dfe6ed;
 }
 </style>
 

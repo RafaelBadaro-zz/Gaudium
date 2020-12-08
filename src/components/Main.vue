@@ -9,7 +9,9 @@
         <router-link class="link" to="/pagamentos">
           <Card titulo="Pagamentos" icone="attach_money"></Card>
         </router-link>
-        <Card titulo="Comunicação" icone="group"></Card>
+        <router-link class="link" to="/comunicacao">
+          <Card titulo="Comunicação" icone="group"></Card>
+        </router-link>
         <Card titulo="Serviços" icone="connect_without_contact"></Card>
         <Card titulo="Marketplace" icone="local_shipping"></Card>
         <Card titulo="Comida" icone="local_dining"></Card>
