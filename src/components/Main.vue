@@ -12,7 +12,9 @@
         <router-link class="link" to="/comunicacao">
           <Card titulo="Comunicação" icone="group"></Card>
         </router-link>
-        <Card titulo="Serviços" icone="connect_without_contact"></Card>
+        <router-link class="link" to="/servicos">
+          <Card titulo="Serviços" icone="connect_without_contact"></Card>
+        </router-link>
         <Card titulo="Marketplace" icone="local_shipping"></Card>
         <Card titulo="Comida" icone="local_dining"></Card>
         <Card titulo="Shopping" icone="shopping_bag"></Card>

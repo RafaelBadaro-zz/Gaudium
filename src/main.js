@@ -5,6 +5,7 @@ import Main from './components/Main.vue'
 import Pagamentos from './components/Pagamentos.vue'
 import EmConstrucao from './components/EmConstrucao.vue'
 import Comunicacao from './components/Comunicacao.vue'
+import Servicos from './components/Servicos.vue'
 
 Vue.use(VueRouter);
 Vue.config.productionTip = false
@@ -16,6 +17,7 @@ const routes = [
   { path: '/home', component: Main },
   { path: '/construcao', component: EmConstrucao },
   { path: '/comunicacao', component: Comunicacao },
+  { path: '/servicos', component: Servicos },
 ]
 
 const router = new VueRouter({
