@@ -15,7 +15,9 @@
         <router-link class="link" to="/servicos">
           <Card titulo="Serviços" icone="connect_without_contact"></Card>
         </router-link>
-        <Card titulo="Marketplace" icone="local_shipping"></Card>
+        <router-link class="link" to="/construcao">
+          <Card titulo="Marketplace" icone="local_shipping"></Card>
+        </router-link>
         <router-link class="link" to="/comida">
           <Card titulo="Comida" icone="local_dining"></Card>
         </router-link>
@@ -25,11 +27,21 @@
         <router-link class="link" to="/noticias">
           <Card titulo="Notícias" icone="library_books"></Card>
         </router-link>
-        <Card titulo="Transporte" icone="directions_car"></Card>
-        <Card titulo="Tempo" icone="cloud_queue"></Card>
-        <Card titulo="Destaques" icone="new_releases"></Card>
-        <Card titulo="Entretenimento" icone="theaters"></Card>
-        <Card titulo="Feedback" icone="announcement"></Card>
+        <router-link class="link" to="/construcao">
+          <Card titulo="Transporte" icone="directions_car"></Card>
+        </router-link>
+        <router-link class="link" to="/tempo">
+          <Card titulo="Tempo" icone="cloud_queue"></Card>
+        </router-link>
+        <router-link class="link" to="/construcao">
+          <Card titulo="Destaques" icone="new_releases"></Card>
+        </router-link>
+        <router-link class="link" to="/construcao">
+          <Card titulo="Entretenimento" icone="theaters"></Card>
+        </router-link>
+        <router-link class="link" to="/construcao">
+          <Card titulo="Feedback" icone="announcement"></Card>
+        </router-link>
       </div>
     </div>
   </div>

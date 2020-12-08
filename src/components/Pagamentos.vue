@@ -1,7 +1,7 @@
 <template>
   <div class="pagamentos">
     <HeaderRetorno nome="Pagamentos"></HeaderRetorno>
-    <div class="body">
+    <div class="body-pagamentos">
       <div class="cards">
         <router-link class="link" to="/construcao">
           <Card titulo="Carteira Virtual" icone="account_balance_wallet"></Card>

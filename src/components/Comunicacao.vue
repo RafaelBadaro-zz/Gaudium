@@ -36,6 +36,12 @@ export default {
 </script>
 
 <style>
+.comunicacao {
+  height: 100%;
+}
+.body {
+  height: 100%;
+}
 .cards-top {
   display: flex;
   justify-content: space-around;
