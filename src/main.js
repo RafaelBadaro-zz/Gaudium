@@ -6,6 +6,9 @@ import Pagamentos from './components/Pagamentos.vue'
 import EmConstrucao from './components/EmConstrucao.vue'
 import Comunicacao from './components/Comunicacao.vue'
 import Servicos from './components/Servicos.vue'
+import Comida from './components/Comida.vue'
+import Noticias from './components/Noticias.vue'
+import Shopping from './components/Shopping.vue'
 
 Vue.use(VueRouter);
 Vue.config.productionTip = false
@@ -18,6 +21,9 @@ const routes = [
   { path: '/construcao', component: EmConstrucao },
   { path: '/comunicacao', component: Comunicacao },
   { path: '/servicos', component: Servicos },
+  { path: '/comida', component: Comida },
+  { path: '/noticias', component: Noticias },
+  { path: '/shopping', component: Shopping },
 ]
 
 const router = new VueRouter({

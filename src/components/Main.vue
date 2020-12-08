@@ -16,9 +16,15 @@
           <Card titulo="Serviços" icone="connect_without_contact"></Card>
         </router-link>
         <Card titulo="Marketplace" icone="local_shipping"></Card>
-        <Card titulo="Comida" icone="local_dining"></Card>
-        <Card titulo="Shopping" icone="shopping_bag"></Card>
-        <Card titulo="Notícias" icone="library_books"></Card>
+        <router-link class="link" to="/comida">
+          <Card titulo="Comida" icone="local_dining"></Card>
+        </router-link>
+        <router-link class="link" to="/shopping">
+          <Card titulo="Shopping" icone="shopping_bag"></Card>
+        </router-link>
+        <router-link class="link" to="/noticias">
+          <Card titulo="Notícias" icone="library_books"></Card>
+        </router-link>
         <Card titulo="Transporte" icone="directions_car"></Card>
         <Card titulo="Tempo" icone="cloud_queue"></Card>
         <Card titulo="Destaques" icone="new_releases"></Card>
