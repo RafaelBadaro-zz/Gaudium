@@ -21,13 +21,10 @@ export default {
   margin: 10px;
 }
 
-.content {
-}
 .title {
   font-size: 20px;
   padding-top: 15px;
   margin: 0;
 }
-.icon {
-}
+
 </style>
