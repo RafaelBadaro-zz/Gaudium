@@ -1,7 +1,7 @@
 <template>
   <div class="comunicacao">
     <HeaderRetorno nome="Comunicacao"></HeaderRetorno>
-    <div class="body">
+    <div class="body-comunicacao">
       <div class="cards-top">
         <router-link class="link" to="/construcao">
           <Card titulo="Nova Conversa" icone="chat"></Card>
@@ -39,7 +39,7 @@ export default {
 .comunicacao {
   height: 100%;
 }
-.body {
+.body-comunicacao {
   height: 100%;
 }
 .cards-top {

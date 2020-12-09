@@ -1,7 +1,7 @@
 <template>
   <div class="comida">
     <HeaderRetorno nome="Comida"></HeaderRetorno>
-    <div class="body">
+    <div class="body-comida">
       <div class="search">
         <input placeholder="Buscar comida" />
       </div>
@@ -51,7 +51,7 @@ export default {
 </script>
 
 <style>
-.body {
+.body-comida {
   display: grid;
   grid-template-rows: 15%;
 }
